@@ -1,1 +1,3 @@
 github "Alamofire/Alamofire" "e6bc5c707afa4d8b4aa336f1a63808641dc189f7"
+github "NZN/NZAlertView" "0.0.13"
+github "NZN/UIImage-Helpers" "0.0.3"

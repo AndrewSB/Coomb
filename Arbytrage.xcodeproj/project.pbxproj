@@ -13,11 +13,18 @@
 		4631E4681B807B5600D6821C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4631E4661B807B5600D6821C /* LaunchScreen.storyboard */; };
 		4631E4701B807B7A00D6821C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631E46F1B807B7A00D6821C /* WelcomeViewController.swift */; };
 		4631E4751B807D3A00D6821C /* PickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631E4741B807D3A00D6821C /* PickerTableViewController.swift */; };
+		463225471B809961003CDDA6 /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 463225411B809961003CDDA6 /* UIImage+Blur.m */; };
+		463225481B809961003CDDA6 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 463225431B809961003CDDA6 /* UIImage+ImageWithColor.m */; };
+		463225491B809961003CDDA6 /* UIImage+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 463225451B809961003CDDA6 /* UIImage+Screenshot.m */; };
 		46805DFA1B80845C00E48F7B /* Alamofire.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 46805DF81B80845C00E48F7B /* Alamofire.framework.dSYM */; };
 		46805DFC1B80846E00E48F7B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46805DF71B80845C00E48F7B /* Alamofire.framework */; };
 		46805DFD1B80846E00E48F7B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46805DF71B80845C00E48F7B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46805E021B80935A00E48F7B /* CurrencyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46805E011B80935A00E48F7B /* CurrencyCollectionViewController.swift */; };
 		46805E041B80943C00E48F7B /* CurrencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46805E031B80943C00E48F7B /* CurrencyCollectionViewCell.swift */; };
+		46805E101B8097DF00E48F7B /* NZAlertViewColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 46805E081B8097DF00E48F7B /* NZAlertViewColor.m */; };
+		46805E111B8097DF00E48F7B /* NZAlertView-Icons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46805E091B8097DF00E48F7B /* NZAlertView-Icons.bundle */; };
+		46805E121B8097DF00E48F7B /* NZAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46805E0B1B8097DF00E48F7B /* NZAlertView.m */; };
+		46805E131B8097DF00E48F7B /* NZAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46805E0F1B8097DF00E48F7B /* NZAlertView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,10 +50,25 @@
 		4631E4691B807B5600D6821C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4631E46F1B807B7A00D6821C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4631E4741B807D3A00D6821C /* PickerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTableViewController.swift; sourceTree = "<group>"; };
+		463225401B809961003CDDA6 /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		463225411B809961003CDDA6 /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		463225421B809961003CDDA6 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		463225431B809961003CDDA6 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
+		463225441B809961003CDDA6 /* UIImage+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Screenshot.h"; sourceTree = "<group>"; };
+		463225451B809961003CDDA6 /* UIImage+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Screenshot.m"; sourceTree = "<group>"; };
+		463225461B809961003CDDA6 /* UIImage-Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Helpers.h"; sourceTree = "<group>"; };
 		46805DF71B80845C00E48F7B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		46805DF81B80845C00E48F7B /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		46805E011B80935A00E48F7B /* CurrencyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewController.swift; sourceTree = "<group>"; };
 		46805E031B80943C00E48F7B /* CurrencyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewCell.swift; sourceTree = "<group>"; };
+		46805E071B8097DF00E48F7B /* NZAlertViewColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertViewColor.h; sourceTree = "<group>"; };
+		46805E081B8097DF00E48F7B /* NZAlertViewColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAlertViewColor.m; sourceTree = "<group>"; };
+		46805E091B8097DF00E48F7B /* NZAlertView-Icons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "NZAlertView-Icons.bundle"; sourceTree = "<group>"; };
+		46805E0A1B8097DF00E48F7B /* NZAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertView.h; sourceTree = "<group>"; };
+		46805E0B1B8097DF00E48F7B /* NZAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAlertView.m; sourceTree = "<group>"; };
+		46805E0D1B8097DF00E48F7B /* NZAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlertViewDelegate.h; sourceTree = "<group>"; };
+		46805E0F1B8097DF00E48F7B /* NZAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NZAlertView.xib; sourceTree = "<group>"; };
+		46805E141B8097F200E48F7B /* Arbytrage-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Arbytrage-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +124,70 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4632253F1B809961003CDDA6 /* UIImage-Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				463225401B809961003CDDA6 /* UIImage+Blur.h */,
+				463225411B809961003CDDA6 /* UIImage+Blur.m */,
+				463225421B809961003CDDA6 /* UIImage+ImageWithColor.h */,
+				463225431B809961003CDDA6 /* UIImage+ImageWithColor.m */,
+				463225441B809961003CDDA6 /* UIImage+Screenshot.h */,
+				463225451B809961003CDDA6 /* UIImage+Screenshot.m */,
+				463225461B809961003CDDA6 /* UIImage-Helpers.h */,
+			);
+			name = "UIImage-Helpers";
+			path = "Carthage/Checkouts/UIImage-Helpers/UIImage-Helpers";
+			sourceTree = "<group>";
+		};
 		46805DFB1B80845F00E48F7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4632253F1B809961003CDDA6 /* UIImage-Helpers */,
+				46805E051B8097DF00E48F7B /* NZAlertView */,
 				46805DF71B80845C00E48F7B /* Alamofire.framework */,
 				46805DF81B80845C00E48F7B /* Alamofire.framework.dSYM */,
+				46805E141B8097F200E48F7B /* Arbytrage-Bridging-Header.h */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46805E051B8097DF00E48F7B /* NZAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				46805E061B8097DF00E48F7B /* Helpers */,
+				46805E091B8097DF00E48F7B /* NZAlertView-Icons.bundle */,
+				46805E0A1B8097DF00E48F7B /* NZAlertView.h */,
+				46805E0B1B8097DF00E48F7B /* NZAlertView.m */,
+				46805E0C1B8097DF00E48F7B /* Protocols */,
+				46805E0E1B8097DF00E48F7B /* Views */,
+			);
+			name = NZAlertView;
+			path = Carthage/Checkouts/NZAlertView/NZAlertView;
+			sourceTree = "<group>";
+		};
+		46805E061B8097DF00E48F7B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46805E071B8097DF00E48F7B /* NZAlertViewColor.h */,
+				46805E081B8097DF00E48F7B /* NZAlertViewColor.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		46805E0C1B8097DF00E48F7B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				46805E0D1B8097DF00E48F7B /* NZAlertViewDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		46805E0E1B8097DF00E48F7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46805E0F1B8097DF00E48F7B /* NZAlertView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +248,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46805E111B8097DF00E48F7B /* NZAlertView-Icons.bundle in Resources */,
 				4631E4681B807B5600D6821C /* LaunchScreen.storyboard in Resources */,
 				4631E4651B807B5600D6821C /* Assets.xcassets in Resources */,
+				46805E131B8097DF00E48F7B /* NZAlertView.xib in Resources */,
 				4631E4631B807B5600D6821C /* Main.storyboard in Resources */,
 				46805DFA1B80845C00E48F7B /* Alamofire.framework.dSYM in Resources */,
 			);
@@ -184,10 +265,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4631E45E1B807B5600D6821C /* AppDelegate.swift in Sources */,
+				463225481B809961003CDDA6 /* UIImage+ImageWithColor.m in Sources */,
 				46805E041B80943C00E48F7B /* CurrencyCollectionViewCell.swift in Sources */,
+				463225471B809961003CDDA6 /* UIImage+Blur.m in Sources */,
 				4631E4701B807B7A00D6821C /* WelcomeViewController.swift in Sources */,
+				463225491B809961003CDDA6 /* UIImage+Screenshot.m in Sources */,
+				46805E121B8097DF00E48F7B /* NZAlertView.m in Sources */,
 				4631E4751B807D3A00D6821C /* PickerTableViewController.swift in Sources */,
 				46805E021B80935A00E48F7B /* CurrencyCollectionViewController.swift in Sources */,
+				46805E101B8097DF00E48F7B /* NZAlertViewColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +392,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tfw.Arbytrage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -321,6 +408,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tfw.Arbytrage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)-Bridging-Header.h";
 			};
 			name = Release;
 		};

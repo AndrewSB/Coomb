@@ -33,14 +33,17 @@ class WelcomeViewController: UIViewController {
     }
 
     @IBAction func didHitManualBuy() {
-        UIView.animateWithDuration(0.2) {
-            self.buyButton.frame = 
-            UIView.animateWithDuration(0.5) {
-                self.buyButton.alpha = 1
-            }
-        }
+//        UIView.animateWithDuration(0.2) {
+//            self.buyButton.frame =
+//            UIView.animateWithDuration(0.5) {
+//                self.buyButton.alpha = 1
+//            }
+//        }
     }
     
+    @IBAction func didSwitch() {
+        switchLabel.text = `switch`.on ? "Auto Selected" : "Manual Selected"
+    }
     
     @IBAction func unwindToWelcome(sender: UIStoryboardSegue) {}
 }
