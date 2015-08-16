@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Picker Table View Controller-->
         <scene sceneID="fXY-Va-8uf">
@@ -88,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="-509" y="136"/>
         </scene>
-        <!--Currency Collection View Controller-->
+        <!--Current Exchanges-->
         <scene sceneID="lqs-fL-quG">
             <objects>
                 <viewController id="GGY-p7-PQh" customClass="CurrencyCollectionViewController" customModule="Arbytrage" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,30 +105,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bdX-cA-KCu">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                                <color key="backgroundColor" red="0.22777482867240906" green="0.50066739320755005" blue="0.41094279289245605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bdX-cA-KCu">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HDi-BK-anb">
-                                    <size key="itemSize" width="136" height="119"/>
+                                    <size key="itemSize" width="199" height="290"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="id" id="B4h-j4-RfH" customClass="CurrencyCollectionViewCell" customModule="Arbytrage" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="136" height="119"/>
+                                        <rect key="frame" x="0.0" y="64" width="110" height="380"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="136" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="380"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ8-og-2Ei">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ8-og-2Ei">
                                                     <rect key="frame" x="47" y="34" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djl-5Z-UMq">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djl-5Z-UMq">
                                                     <rect key="frame" x="47" y="61" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -139,6 +144,7 @@
                                             <constraint firstItem="tJ8-og-2Ei" firstAttribute="centerY" secondItem="B4h-j4-RfH" secondAttribute="centerY" multiplier="0.75" id="Ynf-ug-puT"/>
                                             <constraint firstItem="Djl-5Z-UMq" firstAttribute="top" secondItem="tJ8-og-2Ei" secondAttribute="bottom" constant="6" id="lXz-Bl-gEe"/>
                                         </constraints>
+                                        <size key="customSize" width="110" height="380"/>
                                         <connections>
                                             <outlet property="currencyLabel" destination="Djl-5Z-UMq" id="YNK-wC-Q58"/>
                                             <outlet property="nameLabel" destination="tJ8-og-2Ei" id="KGx-dn-ZcE"/>
@@ -151,7 +157,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bdX-cA-KCu" firstAttribute="top" secondItem="cZM-Jk-rzw" secondAttribute="bottom" id="HpP-FE-VQB"/>
                             <constraint firstItem="YI9-GH-s9h" firstAttribute="top" secondItem="bdX-cA-KCu" secondAttribute="bottom" id="WJA-gI-bYE"/>
@@ -159,7 +165,7 @@
                             <constraint firstAttribute="trailing" secondItem="bdX-cA-KCu" secondAttribute="trailing" id="y4s-Vb-4f9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Bf1-gi-9Pr">
+                    <navigationItem key="navigationItem" title="Current Exchanges" id="Bf1-gi-9Pr">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="ieu-pK-zSP">
                             <connections>
                                 <segue destination="IVj-UG-qvF" kind="unwind" unwindAction="unwindToWelcome:" id="HVh-BI-vUj"/>
@@ -172,7 +178,7 @@
             </objects>
             <point key="canvasLocation" x="989" y="-634"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--Coomb-->
         <scene sceneID="sNU-Pg-ERg">
             <objects>
                 <viewController id="6St-Rg-RsK" customClass="WelcomeViewController" customModule="Arbytrage" customModuleProvider="target" sceneMemberID="viewController">
@@ -185,8 +191,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnh-nf-FCz">
-                                <rect key="frame" x="275" y="225" width="50" height="30"/>
-                                <state key="normal" title="$69.32"/>
+                                <rect key="frame" x="285" y="204" width="30" height="73"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="44"/>
                                 <connections>
                                     <segue destination="Yd6-wy-T54" kind="presentation" id="p9a-B0-21N"/>
                                 </connections>
@@ -197,8 +203,8 @@
                                     <action selector="didSwitch" destination="6St-Rg-RsK" eventType="valueChanged" id="gCj-us-Tg6"/>
                                 </connections>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zn-g6-JuG">
-                                <rect key="frame" x="261" y="496" width="80" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zn-g6-JuG">
+                                <rect key="frame" x="260" y="496" width="80" height="30"/>
                                 <state key="normal" title="Manual Buy"/>
                                 <connections>
                                     <action selector="didHitManualBuy" destination="6St-Rg-RsK" eventType="touchUpInside" id="5eZ-2C-rrm"/>
@@ -210,11 +216,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current BTC to USD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIa-QW-O8r">
+                                <rect key="frame" x="223" y="159" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Wnh-nf-FCz" firstAttribute="centerX" secondItem="Rve-FD-GfQ" secondAttribute="centerX" id="5op-TZ-Aoh"/>
+                            <constraint firstItem="Wnh-nf-FCz" firstAttribute="top" secondItem="tIa-QW-O8r" secondAttribute="bottom" constant="24" id="J2K-xm-PgJ"/>
                             <constraint firstItem="2zn-g6-JuG" firstAttribute="top" secondItem="vNy-UX-yZ0" secondAttribute="bottom" constant="19" id="S2B-AL-ls8"/>
+                            <constraint firstItem="tIa-QW-O8r" firstAttribute="centerX" secondItem="Rve-FD-GfQ" secondAttribute="centerX" id="VhX-Zz-i5G"/>
                             <constraint firstItem="7h6-1t-6cO" firstAttribute="centerX" secondItem="Rve-FD-GfQ" secondAttribute="centerX" id="isf-Jz-7gA"/>
                             <constraint firstItem="YHZ-rf-31F" firstAttribute="top" secondItem="2zn-g6-JuG" secondAttribute="bottom" constant="74" id="jaK-M6-Sxr"/>
                             <constraint firstItem="vNy-UX-yZ0" firstAttribute="top" secondItem="7h6-1t-6cO" secondAttribute="bottom" constant="21" id="mmb-Ya-rEt"/>
@@ -223,7 +237,7 @@
                             <constraint firstItem="2zn-g6-JuG" firstAttribute="centerX" secondItem="Rve-FD-GfQ" secondAttribute="centerX" id="yzM-1v-eJ5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RNL-WY-PkN">
+                    <navigationItem key="navigationItem" title="Coomb" id="RNL-WY-PkN">
                         <barButtonItem key="leftBarButtonItem" title="Pick Currency" id="gNp-Tr-JUt">
                             <connections>
                                 <action selector="didSelectPickCurrency:" destination="6St-Rg-RsK" id="SvB-O1-fvD"/>
@@ -232,6 +246,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="buyButton" destination="2zn-g6-JuG" id="LT8-0o-C0S"/>
+                        <outlet property="currencyButton" destination="Wnh-nf-FCz" id="vKx-GE-DCU"/>
                         <outlet property="switch" destination="vNy-UX-yZ0" id="VbZ-tl-13G"/>
                         <outlet property="switchLabel" destination="7h6-1t-6cO" id="UGk-e0-fYG"/>
                         <segue destination="ccg-lj-aok" kind="presentation" identifier="segueToPicker" id="5PJ-e6-14y"/>

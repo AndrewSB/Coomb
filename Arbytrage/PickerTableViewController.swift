@@ -13,10 +13,6 @@ class PickerTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
-        
-        if let des = segue.destinationViewController as? WelcomeViewController {
-            des.selectedCurrency = sender as? String
-        }
     }
 }
 

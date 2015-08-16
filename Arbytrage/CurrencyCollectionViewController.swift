@@ -35,6 +35,8 @@ extension CurrencyCollectionViewController: UICollectionViewDataSource, UICollec
         cell.nameLabel.text = data[indexPath.row].0
         cell.currencyLabel.text = "$\(data[indexPath.row].1)"
         
+        
         return cell
     }
+    
 }

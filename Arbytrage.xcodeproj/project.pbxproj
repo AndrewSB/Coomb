@@ -36,6 +36,7 @@
 		4632257A1B809ABA003CDDA6 /* TSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 463225631B809ABA003CDDA6 /* TSMessage.m */; };
 		4632257B1B809ABA003CDDA6 /* TSMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 463225651B809ABA003CDDA6 /* TSMessageView.m */; };
 		463225A91B809B28003CDDA6 /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 463225A81B809B28003CDDA6 /* HexColor.m */; };
+		463225AB1B809C79003CDDA6 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463225AA1B809C79003CDDA6 /* Delay.swift */; };
 		46805DFA1B80845C00E48F7B /* Alamofire.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 46805DF81B80845C00E48F7B /* Alamofire.framework.dSYM */; };
 		46805DFC1B80846E00E48F7B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46805DF71B80845C00E48F7B /* Alamofire.framework */; };
 		46805DFD1B80846E00E48F7B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46805DF71B80845C00E48F7B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -93,6 +94,7 @@
 		463225651B809ABA003CDDA6 /* TSMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMessageView.m; sourceTree = "<group>"; };
 		463225A71B809B28003CDDA6 /* HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColor.h; sourceTree = "<group>"; };
 		463225A81B809B28003CDDA6 /* HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColor.m; sourceTree = "<group>"; };
+		463225AA1B809C79003CDDA6 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		46805DF71B80845C00E48F7B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		46805DF81B80845C00E48F7B /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		46805E011B80935A00E48F7B /* CurrencyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				4631E46F1B807B7A00D6821C /* WelcomeViewController.swift */,
 				4631E4741B807D3A00D6821C /* PickerTableViewController.swift */,
 				46805E011B80935A00E48F7B /* CurrencyCollectionViewController.swift */,
+				463225AA1B809C79003CDDA6 /* Delay.swift */,
 				46805E031B80943C00E48F7B /* CurrencyCollectionViewCell.swift */,
 				4631E4611B807B5600D6821C /* Main.storyboard */,
 				4631E4711B807B8300D6821C /* Supporting Files */,
@@ -324,6 +327,7 @@
 				463225791B809ABA003CDDA6 /* TSBlurView.m in Sources */,
 				46805E021B80935A00E48F7B /* CurrencyCollectionViewController.swift in Sources */,
 				463225A91B809B28003CDDA6 /* HexColor.m in Sources */,
+				463225AB1B809C79003CDDA6 /* Delay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

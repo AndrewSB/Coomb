@@ -11,7 +11,7 @@ import Alamofire
 
 class WelcomeViewController: UIViewController {
     
-    var selectedCurrency: String?
+    @IBOutlet weak var currencyButton: UIButton!
     
     @IBOutlet weak var switchLabel: UILabel!
     @IBOutlet weak var `switch`: UISwitch!
@@ -20,12 +20,24 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         didSwitch()
+        
+        Alamofire.request(.GET, "http://blockchain.info/ticker")
+        .responseJSON {
+            let fuckingHackyUSD = (($0.2.value! as! NSDictionary)["USD"]! as! NSDictionary)["15m"]
+            print(fuckingHackyUSD)
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                self.currencyButton.setTitle("$\(fuckingHackyUSD!)", forState: .Normal)
+            }
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        
+        delay(Double(rand() % 10)) {
+            TSMessage.showNotificationWithTitle("yo", type: .Message)
+        }
     }
     
     @IBAction func didSelectPickCurrency(sender: AnyObject) {
