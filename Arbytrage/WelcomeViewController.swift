@@ -12,20 +12,20 @@ import Alamofire
 class WelcomeViewController: UIViewController {
     
     var selectedCurrency: String?
-    @IBOutlet weak var currencyLabel: UILabel!
-    
     
     @IBOutlet weak var switchLabel: UILabel!
     @IBOutlet weak var `switch`: UISwitch!
     @IBOutlet weak var buyButton: UIButton!
     
-
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-
-        if let selectedCurrency = selectedCurrency {
-            currencyLabel.text = "I see you like the \(selectedCurrency). I approve"
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        didSwitch()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
     }
     
     @IBAction func didSelectPickCurrency(sender: AnyObject) {
@@ -33,16 +33,13 @@ class WelcomeViewController: UIViewController {
     }
 
     @IBAction func didHitManualBuy() {
-//        UIView.animateWithDuration(0.2) {
-//            self.buyButton.frame =
-//            UIView.animateWithDuration(0.5) {
-//                self.buyButton.alpha = 1
-//            }
-//        }
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://blockchain.info/wallet/login")!)
     }
     
     @IBAction func didSwitch() {
-        switchLabel.text = `switch`.on ? "Auto Selected" : "Manual Selected"
+        buyButton.hidden = `switch`.on
+        switchLabel.text = `switch`.on ? "Auto Buy" : "Manual Selection"
     }
     
     @IBAction func unwindToWelcome(sender: UIStoryboardSegue) {}

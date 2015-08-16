@@ -1,3 +1,2 @@
 github "Alamofire/Alamofire" "swift-2.0"
-github "NZN/NZAlertView"
-github "NZN/UIImage-Helpers"
+github "KrauseFx/TSMessages"
