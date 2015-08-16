@@ -16,6 +16,8 @@
 		46805DFA1B80845C00E48F7B /* Alamofire.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 46805DF81B80845C00E48F7B /* Alamofire.framework.dSYM */; };
 		46805DFC1B80846E00E48F7B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46805DF71B80845C00E48F7B /* Alamofire.framework */; };
 		46805DFD1B80846E00E48F7B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46805DF71B80845C00E48F7B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46805E021B80935A00E48F7B /* CurrencyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46805E011B80935A00E48F7B /* CurrencyCollectionViewController.swift */; };
+		46805E041B80943C00E48F7B /* CurrencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46805E031B80943C00E48F7B /* CurrencyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,8 @@
 		4631E4741B807D3A00D6821C /* PickerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTableViewController.swift; sourceTree = "<group>"; };
 		46805DF71B80845C00E48F7B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		46805DF81B80845C00E48F7B /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		46805E011B80935A00E48F7B /* CurrencyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewController.swift; sourceTree = "<group>"; };
+		46805E031B80943C00E48F7B /* CurrencyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				4631E45D1B807B5600D6821C /* AppDelegate.swift */,
 				4631E46F1B807B7A00D6821C /* WelcomeViewController.swift */,
 				4631E4741B807D3A00D6821C /* PickerTableViewController.swift */,
+				46805E011B80935A00E48F7B /* CurrencyCollectionViewController.swift */,
+				46805E031B80943C00E48F7B /* CurrencyCollectionViewCell.swift */,
 				4631E4611B807B5600D6821C /* Main.storyboard */,
 				4631E4711B807B8300D6821C /* Supporting Files */,
 			);
@@ -178,8 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4631E45E1B807B5600D6821C /* AppDelegate.swift in Sources */,
+				46805E041B80943C00E48F7B /* CurrencyCollectionViewCell.swift in Sources */,
 				4631E4701B807B7A00D6821C /* WelcomeViewController.swift in Sources */,
 				4631E4751B807D3A00D6821C /* PickerTableViewController.swift in Sources */,
+				46805E021B80935A00E48F7B /* CurrencyCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

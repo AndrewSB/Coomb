@@ -13,6 +13,12 @@ class WelcomeViewController: UIViewController {
     
     var selectedCurrency: String?
     @IBOutlet weak var currencyLabel: UILabel!
+    
+    
+    @IBOutlet weak var switchLabel: UILabel!
+    @IBOutlet weak var `switch`: UISwitch!
+    @IBOutlet weak var buyButton: UIButton!
+    
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -26,5 +32,15 @@ class WelcomeViewController: UIViewController {
         self.performSegueWithIdentifier("segueToPicker", sender: nil)
     }
 
+    @IBAction func didHitManualBuy() {
+        UIView.animateWithDuration(0.2) {
+            self.buyButton.frame = 
+            UIView.animateWithDuration(0.5) {
+                self.buyButton.alpha = 1
+            }
+        }
+    }
+    
+    
     @IBAction func unwindToWelcome(sender: UIStoryboardSegue) {}
 }

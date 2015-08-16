@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Picker Table View Controller-->
@@ -87,6 +88,90 @@
             </objects>
             <point key="canvasLocation" x="-509" y="136"/>
         </scene>
+        <!--Currency Collection View Controller-->
+        <scene sceneID="lqs-fL-quG">
+            <objects>
+                <viewController id="GGY-p7-PQh" customClass="CurrencyCollectionViewController" customModule="Arbytrage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cZM-Jk-rzw"/>
+                        <viewControllerLayoutGuide type="bottom" id="YI9-GH-s9h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Tk-TE-AJR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bdX-cA-KCu">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.22777482867240906" green="0.50066739320755005" blue="0.41094279289245605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HDi-BK-anb">
+                                    <size key="itemSize" width="136" height="119"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="id" id="B4h-j4-RfH" customClass="CurrencyCollectionViewCell" customModule="Arbytrage" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="136" height="119"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="136" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ8-og-2Ei">
+                                                    <rect key="frame" x="47" y="34" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djl-5Z-UMq">
+                                                    <rect key="frame" x="47" y="61" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.95649939780000004" green="0.9645027518" blue="0.98100405930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Djl-5Z-UMq" firstAttribute="centerX" secondItem="B4h-j4-RfH" secondAttribute="centerX" id="BEa-mq-afa"/>
+                                            <constraint firstItem="tJ8-og-2Ei" firstAttribute="centerX" secondItem="B4h-j4-RfH" secondAttribute="centerX" id="Y1i-5E-F1u"/>
+                                            <constraint firstItem="tJ8-og-2Ei" firstAttribute="centerY" secondItem="B4h-j4-RfH" secondAttribute="centerY" multiplier="0.75" id="Ynf-ug-puT"/>
+                                            <constraint firstItem="Djl-5Z-UMq" firstAttribute="top" secondItem="tJ8-og-2Ei" secondAttribute="bottom" constant="6" id="lXz-Bl-gEe"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="currencyLabel" destination="Djl-5Z-UMq" id="YNK-wC-Q58"/>
+                                            <outlet property="nameLabel" destination="tJ8-og-2Ei" id="KGx-dn-ZcE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="GGY-p7-PQh" id="D0B-hj-rhx"/>
+                                    <outlet property="delegate" destination="GGY-p7-PQh" id="6qg-LS-IlN"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bdX-cA-KCu" firstAttribute="top" secondItem="cZM-Jk-rzw" secondAttribute="bottom" id="HpP-FE-VQB"/>
+                            <constraint firstItem="YI9-GH-s9h" firstAttribute="top" secondItem="bdX-cA-KCu" secondAttribute="bottom" id="WJA-gI-bYE"/>
+                            <constraint firstItem="bdX-cA-KCu" firstAttribute="leading" secondItem="5Tk-TE-AJR" secondAttribute="leading" id="YQS-8Y-sxD"/>
+                            <constraint firstAttribute="trailing" secondItem="bdX-cA-KCu" secondAttribute="trailing" id="y4s-Vb-4f9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bf1-gi-9Pr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ieu-pK-zSP">
+                            <connections>
+                                <segue destination="IVj-UG-qvF" kind="unwind" unwindAction="unwindToWelcome:" id="HVh-BI-vUj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1m-qv-Qbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IVj-UG-qvF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="989" y="-634"/>
+        </scene>
         <!--Welcome View Controller-->
         <scene sceneID="sNU-Pg-ERg">
             <objects>
@@ -99,8 +184,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="For the hunnies and the munnies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-kQ-EFh">
-                                <rect key="frame" x="200" y="338" width="250" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnh-nf-FCz">
+                                <rect key="frame" x="275" y="225" width="50" height="30"/>
+                                <state key="normal" title="$69.32"/>
+                                <connections>
+                                    <segue destination="Yd6-wy-T54" kind="presentation" id="p9a-B0-21N"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNy-UX-yZ0">
+                                <rect key="frame" x="275" y="446" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zn-g6-JuG">
+                                <rect key="frame" x="261" y="496" width="80" height="30"/>
+                                <state key="normal" title="Manual Buy"/>
+                                <connections>
+                                    <action selector="didHitManualBuy" destination="6St-Rg-RsK" eventType="touchUpInside" id="5eZ-2C-rrm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Exchange" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h6-1t-6cO">
+                                <rect key="frame" x="243" y="404" width="115" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -108,8 +210,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Fcj-kQ-EFh" firstAttribute="centerX" secondItem="Rve-FD-GfQ" secondAttribute="centerX" id="03p-Dn-ROj"/>
-                            <constraint firstItem="Fcj-kQ-EFh" firstAttribute="centerY" secondItem="Rve-FD-GfQ" secondAttribute="centerY" id="6zJ-6Y-Vyv"/>
+                            <constraint firstItem="Wnh-nf-FCz" firstAttribute="centerX" secondItem="Rve-FD-GfQ" secondAttribute="centerX" id="5op-TZ-Aoh"/>
+                            <constraint firstItem="2zn-g6-JuG" firstAttribute="top" secondItem="vNy-UX-yZ0" secondAttribute="bottom" constant="19" id="S2B-AL-ls8"/>
+                            <constraint firstItem="7h6-1t-6cO" firstAttribute="centerX" secondItem="Rve-FD-GfQ" secondAttribute="centerX" id="isf-Jz-7gA"/>
+                            <constraint firstItem="YHZ-rf-31F" firstAttribute="top" secondItem="2zn-g6-JuG" secondAttribute="bottom" constant="74" id="jaK-M6-Sxr"/>
+                            <constraint firstItem="vNy-UX-yZ0" firstAttribute="top" secondItem="7h6-1t-6cO" secondAttribute="bottom" constant="21" id="mmb-Ya-rEt"/>
+                            <constraint firstItem="vNy-UX-yZ0" firstAttribute="centerX" secondItem="Rve-FD-GfQ" secondAttribute="centerX" id="nSN-6Z-guL"/>
+                            <constraint firstItem="Wnh-nf-FCz" firstAttribute="centerY" secondItem="Rve-FD-GfQ" secondAttribute="centerY" multiplier="0.8" id="tOT-gf-dtP"/>
+                            <constraint firstItem="2zn-g6-JuG" firstAttribute="centerX" secondItem="Rve-FD-GfQ" secondAttribute="centerX" id="yzM-1v-eJ5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RNL-WY-PkN">
@@ -120,13 +228,33 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="currencyLabel" destination="Fcj-kQ-EFh" id="35f-Jn-jBc"/>
+                        <outlet property="buyButton" destination="2zn-g6-JuG" id="LT8-0o-C0S"/>
+                        <outlet property="switch" destination="vNy-UX-yZ0" id="VbZ-tl-13G"/>
+                        <outlet property="switchLabel" destination="7h6-1t-6cO" id="UGk-e0-fYG"/>
                         <segue destination="ccg-lj-aok" kind="presentation" identifier="segueToPicker" id="5PJ-e6-14y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVZ-7f-4qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="227" y="136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dLs-Lx-oNQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yd6-wy-T54" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HdF-zQ-Xg0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GGY-p7-PQh" kind="relationship" relationship="rootViewController" id="WJU-VL-pri"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzi-05-nvo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="-634"/>
         </scene>
     </scenes>
 </document>
