@@ -12,6 +12,7 @@
 		4631E4651B807B5600D6821C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4631E4641B807B5600D6821C /* Assets.xcassets */; };
 		4631E4681B807B5600D6821C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4631E4661B807B5600D6821C /* LaunchScreen.storyboard */; };
 		4631E4701B807B7A00D6821C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631E46F1B807B7A00D6821C /* WelcomeViewController.swift */; };
+		4631E4751B807D3A00D6821C /* PickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631E4741B807D3A00D6821C /* PickerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4631E4671B807B5600D6821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4631E4691B807B5600D6821C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4631E46F1B807B7A00D6821C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		4631E4741B807D3A00D6821C /* PickerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				4631E45D1B807B5600D6821C /* AppDelegate.swift */,
 				4631E46F1B807B7A00D6821C /* WelcomeViewController.swift */,
+				4631E4741B807D3A00D6821C /* PickerTableViewController.swift */,
 				4631E4611B807B5600D6821C /* Main.storyboard */,
 				4631E4711B807B8300D6821C /* Supporting Files */,
 			);
@@ -144,6 +147,7 @@
 			files = (
 				4631E45E1B807B5600D6821C /* AppDelegate.swift in Sources */,
 				4631E4701B807B7A00D6821C /* WelcomeViewController.swift in Sources */,
+				4631E4751B807D3A00D6821C /* PickerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
