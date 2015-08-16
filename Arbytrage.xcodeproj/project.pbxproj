@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46EE3D641B80751C004F073C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EE3D631B80751C004F073C /* AppDelegate.swift */; };
-		46EE3D661B80751C004F073C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EE3D651B80751C004F073C /* ViewController.swift */; };
-		46EE3D691B80751C004F073C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3D671B80751C004F073C /* Main.storyboard */; };
-		46EE3D6B1B80751C004F073C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3D6A1B80751C004F073C /* Assets.xcassets */; };
-		46EE3D6E1B80751C004F073C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EE3D6C1B80751C004F073C /* LaunchScreen.storyboard */; };
+		4631E45E1B807B5600D6821C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631E45D1B807B5600D6821C /* AppDelegate.swift */; };
+		4631E4631B807B5600D6821C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4631E4611B807B5600D6821C /* Main.storyboard */; };
+		4631E4651B807B5600D6821C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4631E4641B807B5600D6821C /* Assets.xcassets */; };
+		4631E4681B807B5600D6821C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4631E4661B807B5600D6821C /* LaunchScreen.storyboard */; };
+		4631E4701B807B7A00D6821C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4631E46F1B807B7A00D6821C /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		46EE3D601B80751C004F073C /* Arbytrage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arbytrage.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		46EE3D631B80751C004F073C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46EE3D651B80751C004F073C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46EE3D681B80751C004F073C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		46EE3D6A1B80751C004F073C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		46EE3D6D1B80751C004F073C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		46EE3D6F1B80751C004F073C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4631E45A1B807B5600D6821C /* Arbytrage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arbytrage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4631E45D1B807B5600D6821C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4631E4621B807B5600D6821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4631E4641B807B5600D6821C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4631E4671B807B5600D6821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4631E4691B807B5600D6821C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4631E46F1B807B7A00D6821C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46EE3D5D1B80751C004F073C /* Frameworks */ = {
+		4631E4571B807B5600D6821C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,39 +35,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46EE3D571B80751C004F073C = {
+		4631E4511B807B5600D6821C = {
 			isa = PBXGroup;
 			children = (
-				46EE3D621B80751C004F073C /* Arbytrage */,
-				46EE3D611B80751C004F073C /* Products */,
+				4631E45C1B807B5600D6821C /* Arbytrage */,
+				4631E45B1B807B5600D6821C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		46EE3D611B80751C004F073C /* Products */ = {
+		4631E45B1B807B5600D6821C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46EE3D601B80751C004F073C /* Arbytrage.app */,
+				4631E45A1B807B5600D6821C /* Arbytrage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		46EE3D621B80751C004F073C /* Arbytrage */ = {
+		4631E45C1B807B5600D6821C /* Arbytrage */ = {
 			isa = PBXGroup;
 			children = (
-				46EE3D631B80751C004F073C /* AppDelegate.swift */,
-				46EE3D651B80751C004F073C /* ViewController.swift */,
-				46EE3D671B80751C004F073C /* Main.storyboard */,
-				46EE3D751B807535004F073C /* Supporting Files */,
+				4631E45D1B807B5600D6821C /* AppDelegate.swift */,
+				4631E46F1B807B7A00D6821C /* WelcomeViewController.swift */,
+				4631E4611B807B5600D6821C /* Main.storyboard */,
+				4631E4711B807B8300D6821C /* Supporting Files */,
 			);
 			path = Arbytrage;
 			sourceTree = "<group>";
 		};
-		46EE3D751B807535004F073C /* Supporting Files */ = {
+		4631E4711B807B8300D6821C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EE3D6A1B80751C004F073C /* Assets.xcassets */,
-				46EE3D6C1B80751C004F073C /* LaunchScreen.storyboard */,
-				46EE3D6F1B80751C004F073C /* Info.plist */,
+				4631E4641B807B5600D6821C /* Assets.xcassets */,
+				4631E4661B807B5600D6821C /* LaunchScreen.storyboard */,
+				4631E4691B807B5600D6821C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -75,13 +75,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		46EE3D5F1B80751C004F073C /* Arbytrage */ = {
+		4631E4591B807B5600D6821C /* Arbytrage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EE3D721B80751C004F073C /* Build configuration list for PBXNativeTarget "Arbytrage" */;
+			buildConfigurationList = 4631E46C1B807B5600D6821C /* Build configuration list for PBXNativeTarget "Arbytrage" */;
 			buildPhases = (
-				46EE3D5C1B80751C004F073C /* Sources */,
-				46EE3D5D1B80751C004F073C /* Frameworks */,
-				46EE3D5E1B80751C004F073C /* Resources */,
+				4631E4561B807B5600D6821C /* Sources */,
+				4631E4571B807B5600D6821C /* Frameworks */,
+				4631E4581B807B5600D6821C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -89,24 +89,24 @@
 			);
 			name = Arbytrage;
 			productName = Arbytrage;
-			productReference = 46EE3D601B80751C004F073C /* Arbytrage.app */;
+			productReference = 4631E45A1B807B5600D6821C /* Arbytrage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		46EE3D581B80751C004F073C /* Project object */ = {
+		4631E4521B807B5600D6821C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Andrew Breckenridge";
 				TargetAttributes = {
-					46EE3D5F1B80751C004F073C = {
+					4631E4591B807B5600D6821C = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
-			buildConfigurationList = 46EE3D5B1B80751C004F073C /* Build configuration list for PBXProject "Arbytrage" */;
+			buildConfigurationList = 4631E4551B807B5600D6821C /* Build configuration list for PBXProject "Arbytrage" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,54 +114,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 46EE3D571B80751C004F073C;
-			productRefGroup = 46EE3D611B80751C004F073C /* Products */;
+			mainGroup = 4631E4511B807B5600D6821C;
+			productRefGroup = 4631E45B1B807B5600D6821C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				46EE3D5F1B80751C004F073C /* Arbytrage */,
+				4631E4591B807B5600D6821C /* Arbytrage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		46EE3D5E1B80751C004F073C /* Resources */ = {
+		4631E4581B807B5600D6821C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EE3D6E1B80751C004F073C /* LaunchScreen.storyboard in Resources */,
-				46EE3D6B1B80751C004F073C /* Assets.xcassets in Resources */,
-				46EE3D691B80751C004F073C /* Main.storyboard in Resources */,
+				4631E4681B807B5600D6821C /* LaunchScreen.storyboard in Resources */,
+				4631E4651B807B5600D6821C /* Assets.xcassets in Resources */,
+				4631E4631B807B5600D6821C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46EE3D5C1B80751C004F073C /* Sources */ = {
+		4631E4561B807B5600D6821C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EE3D661B80751C004F073C /* ViewController.swift in Sources */,
-				46EE3D641B80751C004F073C /* AppDelegate.swift in Sources */,
+				4631E45E1B807B5600D6821C /* AppDelegate.swift in Sources */,
+				4631E4701B807B7A00D6821C /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46EE3D671B80751C004F073C /* Main.storyboard */ = {
+		4631E4611B807B5600D6821C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				46EE3D681B80751C004F073C /* Base */,
+				4631E4621B807B5600D6821C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		46EE3D6C1B80751C004F073C /* LaunchScreen.storyboard */ = {
+		4631E4661B807B5600D6821C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				46EE3D6D1B80751C004F073C /* Base */,
+				4631E4671B807B5600D6821C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		46EE3D701B80751C004F073C /* Debug */ = {
+		4631E46A1B807B5600D6821C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		46EE3D711B80751C004F073C /* Release */ = {
+		4631E46B1B807B5600D6821C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -250,7 +250,7 @@
 			};
 			name = Release;
 		};
-		46EE3D731B80751C004F073C /* Debug */ = {
+		4631E46D1B807B5600D6821C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -261,7 +261,7 @@
 			};
 			name = Debug;
 		};
-		46EE3D741B80751C004F073C /* Release */ = {
+		4631E46E1B807B5600D6821C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -275,24 +275,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46EE3D5B1B80751C004F073C /* Build configuration list for PBXProject "Arbytrage" */ = {
+		4631E4551B807B5600D6821C /* Build configuration list for PBXProject "Arbytrage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EE3D701B80751C004F073C /* Debug */,
-				46EE3D711B80751C004F073C /* Release */,
+				4631E46A1B807B5600D6821C /* Debug */,
+				4631E46B1B807B5600D6821C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EE3D721B80751C004F073C /* Build configuration list for PBXNativeTarget "Arbytrage" */ = {
+		4631E46C1B807B5600D6821C /* Build configuration list for PBXNativeTarget "Arbytrage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EE3D731B80751C004F073C /* Debug */,
-				46EE3D741B80751C004F073C /* Release */,
+				4631E46D1B807B5600D6821C /* Debug */,
+				4631E46E1B807B5600D6821C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 46EE3D581B80751C004F073C /* Project object */;
+	rootObject = 4631E4521B807B5600D6821C /* Project object */;
 }
