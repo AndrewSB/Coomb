@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class WelcomeViewController: UIViewController {
     
@@ -15,7 +16,7 @@ class WelcomeViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         if let selectedCurrency = selectedCurrency {
             currencyLabel.text = "I see you like the \(selectedCurrency). I approve"
         }
