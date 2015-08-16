@@ -72,7 +72,7 @@
         <!--Navigation Controller-->
         <scene sceneID="R0f-xq-gEz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Z1q-ht-Bme" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z1q-ht-Bme" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OQg-97-L0p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -112,7 +112,13 @@
                             <constraint firstItem="Fcj-kQ-EFh" firstAttribute="centerY" secondItem="Rve-FD-GfQ" secondAttribute="centerY" id="6zJ-6Y-Vyv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RNL-WY-PkN"/>
+                    <navigationItem key="navigationItem" id="RNL-WY-PkN">
+                        <barButtonItem key="leftBarButtonItem" title="Pick Currency" id="gNp-Tr-JUt">
+                            <connections>
+                                <action selector="didSelectPickCurrency:" destination="6St-Rg-RsK" id="SvB-O1-fvD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="currencyLabel" destination="Fcj-kQ-EFh" id="35f-Jn-jBc"/>
                         <segue destination="ccg-lj-aok" kind="presentation" identifier="segueToPicker" id="5PJ-e6-14y"/>
