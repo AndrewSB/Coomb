@@ -11,6 +11,21 @@ import Alamofire
 
 class WelcomeViewController: UIViewController {
     
+    var currency: String! = "BTC" {
+        didSet {
+            self.currentLabel.text = "Current \(currency) to USD"
+        }
+    }
+    var currencyValue: Double! {
+        didSet {
+            currencyValue = Double(round(1000*currencyValue)/1000)
+            self.currencyButton.setTitle("$\(currencyValue)", forState: UIControlState.Normal)
+            self.currencyButton.sizeToFit()
+        }
+    }
+    
+    @IBOutlet weak var currentLabel: UILabel!
+    
     @IBOutlet weak var currencyButton: UIButton!
     
     @IBOutlet weak var switchLabel: UILabel!
@@ -21,22 +36,22 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         didSwitch()
         
-        Alamofire.request(.GET, "http://blockchain.info/ticker")
-        .responseJSON {
-            let fuckingHackyUSD = (($0.2.value! as! NSDictionary)["USD"]! as! NSDictionary)["15m"]
-            print(fuckingHackyUSD)
-            
-            dispatch_async(dispatch_get_main_queue()) {
-                self.currencyButton.setTitle("$\(fuckingHackyUSD!)", forState: .Normal)
-            }
-        }
+        currentLabel.text = "Current \(currency) to USD"
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        Alamofire.request(.GET, "http://coinmarketcap-nexuist.rhcloud.com/api/\(currency)/price")
+            .responseJSON {
+                let usd = $0.2.value!["usd"]
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.currencyValue = (usd as! NSString).doubleValue
+                }
+        }
+        
         delay(Double(rand() % 10)) {
-            TSMessage.showNotificationWithTitle("yo", type: .Message)
+            TSMessage.showNotificationWithTitle("\(self.currency) now at $\(self.currencyValue)! Time to buy.", type: .Success)
         }
     }
     
@@ -51,7 +66,7 @@ class WelcomeViewController: UIViewController {
     
     @IBAction func didSwitch() {
         buyButton.hidden = `switch`.on
-        switchLabel.text = `switch`.on ? "Auto Buy" : "Manual Selection"
+        switchLabel.text = `switch`.on ? "Auto Buy Notifications" : "Manual Selection"
     }
     
     @IBAction func unwindToWelcome(sender: UIStoryboardSegue) {}

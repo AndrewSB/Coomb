@@ -7,22 +7,65 @@
 //
 
 import UIKit
+import Alamofire
 
 class CurrencyCollectionViewController: UIViewController {
+    @IBOutlet weak var lolCollectionView: UICollectionView!
     
-    let data = [
-        ("BTC", 43.1),
-        ("CLAM", 11.04),
-        ("PRO", 15.96),
-        ("BANX", 1.23)
-    ]
-
+    var data: [(String, Double)] = [
+        ("BTC", 0),
+        ("CLAM", 0),
+        ("PRO", 0),
+        ("BANX", 0)
+        ] { didSet {
+            self.lolCollectionView.reloadData()
+        }}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        Alamofire.request(.GET, "http://coinmarketcap-nexuist.rhcloud.com/api/banx/price")
+            .responseJSON {
+                let usd = $0.2.value!["usd"]
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.data[2].1 = (usd as! NSString).doubleValue
+                }
+                
+                Alamofire.request(.GET, "http://coinmarketcap-nexuist.rhcloud.com/api/pro/price")
+                    .responseJSON {
+                        let usd = $0.2.value!["usd"]
+                        dispatch_async(dispatch_get_main_queue()) {
+                            self.data[3].1 = (usd as! NSString).doubleValue
+                        }
+                }
+                
+                Alamofire.request(.GET, "http://coinmarketcap-nexuist.rhcloud.com/api/clam/price")
+                    .responseJSON {
+                        let usd = $0.2.value!["usd"]
+                        dispatch_async(dispatch_get_main_queue()) {
+                            self.data[1].1 = (usd as! NSString).doubleValue
+                        }
+                }
+                
+                Alamofire.request(.GET, "http://coinmarketcap-nexuist.rhcloud.com/api/btc/price")
+                    .responseJSON {
+                        let usd = $0.2.value!["usd"]
+                        dispatch_async(dispatch_get_main_queue()) {
+                            self.data[0].1 = (usd as! NSString).doubleValue
+                        }
+                }
+        }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+        print(sender as! String)
+        
+        if let des = segue.destinationViewController as? WelcomeViewController {
+            des.currency = sender as! String
+        }
+    }
 }
 
 extension CurrencyCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -33,10 +76,17 @@ extension CurrencyCollectionViewController: UICollectionViewDataSource, UICollec
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("id", forIndexPath: indexPath) as! CurrencyCollectionViewCell
         cell.nameLabel.text = data[indexPath.row].0
-        cell.currencyLabel.text = "$\(data[indexPath.row].1)"
+        
+//        data[indexPath.row].1 = Double(round(1000 * self.data[indexPath.row].1)/1000)
+        
+        let lol = data[indexPath.row].1 == 0 ? "" : "\(data[indexPath.row].1)"
+        cell.currencyLabel.text = "$\(lol)"
         
         
         return cell
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("unwindToWelcome", sender: data[indexPath.row].0)
+    }
 }

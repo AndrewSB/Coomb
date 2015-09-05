@@ -168,10 +168,13 @@
                     <navigationItem key="navigationItem" title="Current Exchanges" id="Bf1-gi-9Pr">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="ieu-pK-zSP">
                             <connections>
-                                <segue destination="IVj-UG-qvF" kind="unwind" unwindAction="unwindToWelcome:" id="HVh-BI-vUj"/>
+                                <segue destination="IVj-UG-qvF" kind="unwind" identifier="unwindToWelcome" unwindAction="unwindToWelcome:" id="zaG-Db-XFc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lolCollectionView" destination="bdX-cA-KCu" id="Rt0-zh-tZx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1m-qv-Qbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="IVj-UG-qvF" userLabel="Exit" sceneMemberID="exit"/>
@@ -247,6 +250,7 @@
                     <connections>
                         <outlet property="buyButton" destination="2zn-g6-JuG" id="LT8-0o-C0S"/>
                         <outlet property="currencyButton" destination="Wnh-nf-FCz" id="vKx-GE-DCU"/>
+                        <outlet property="currentLabel" destination="tIa-QW-O8r" id="USh-aN-8e9"/>
                         <outlet property="switch" destination="vNy-UX-yZ0" id="VbZ-tl-13G"/>
                         <outlet property="switchLabel" destination="7h6-1t-6cO" id="UGk-e0-fYG"/>
                         <segue destination="ccg-lj-aok" kind="presentation" identifier="segueToPicker" id="5PJ-e6-14y"/>
